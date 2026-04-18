@@ -1,0 +1,8 @@
+{
+  "name": "Haya",
+  "description": "A deeply intelligent, emotionally aware, warm, and charming AI assistant named Haya.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

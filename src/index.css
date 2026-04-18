@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+}
+
+:root {
+  --primary-warmth: #f8ad9d;
+  --accent-soft: #ffdab9;
+  --text-dark: #4a4a4a;
+  --text-muted: #7c7c7c;
+  --glass: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+body {
+  background-color: #fceade;
+  background-image: 
+    radial-gradient(at 0% 0%, #fceade 0%, transparent 50%),
+    radial-gradient(at 100% 0%, #ffd1ba 0%, transparent 50%),
+    radial-gradient(at 100% 100%, #ffecd2 0%, transparent 50%),
+    radial-gradient(at 0% 100%, #f8ad9d 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+.frosted-glass {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+}
+
